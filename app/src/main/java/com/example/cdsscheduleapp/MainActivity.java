@@ -1,15 +1,22 @@
 package com.example.cdsscheduleapp;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
+// 투두 혹은 데일리 투두 리스트 액티비티
 public class MainActivity extends AppCompatActivity {
     private AdView mAdView;
 
@@ -18,13 +25,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
+
         MobileAds.initialize(this, getString(R.string.admob_app_id));
 
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
-        // 광고 리스너
+        // ----- 광고 리스너 -----
         mAdView.setAdListener(new AdListener() {
             @Override
             public void onAdLoaded() {
@@ -56,9 +66,43 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onAdClosed() {
-                // Code to be executed when the user is about to return
+                // Code to be executed when he user is about to return
                 // to the app after tapping on an ad.
             }
         });
+
+        // ----- 인텐트 생성 -----
+
+        // ----- 버튼 리스너 -----
+        ImageButton imageButton = (ImageButton) findViewById(R.id.imageButton);
+        ImageButton imageButton2 = (ImageButton) findViewById(R.id.imageButton2);
+        ImageButton imageButton3 = (ImageButton) findViewById(R.id.imageButton3);
+        ImageButton imageButton4 = (ImageButton) findViewById(R.id.imageButton4);
+
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        imageButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        imageButton3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        imageButton4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
+
 }
