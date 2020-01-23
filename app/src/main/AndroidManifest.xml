@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RoutineActivity"></activity>
+        <activity android:name=".RoutineActivity" />
         <activity android:name=".MemoActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".CalendarActivity" /> <!-- play services ads에 전달할 앱 ID -->
