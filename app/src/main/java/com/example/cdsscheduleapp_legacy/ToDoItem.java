@@ -1,4 +1,4 @@
-package com.example.cdsscheduleapp;
+package com.example.cdsscheduleapp_legacy;
 
 public class ToDoItem {
 

@@ -1,4 +1,4 @@
-package com.example.cdsscheduleapp;
+package com.example.cdsscheduleapp_legacy;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;

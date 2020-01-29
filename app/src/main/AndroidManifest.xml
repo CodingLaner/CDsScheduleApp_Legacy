@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.cdsscheduleapp">
+    package="com.example.cdsscheduleapp_legacy">
     <!-- 인터넷 사용을 위한 권한 -->
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,18 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.cdsscheduleapp_legacy.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".RoutineActivity" />
-        <activity android:name=".MemoActivity" />
-        <activity android:name=".SettingsActivity" />
-        <activity android:name=".CalendarActivity" /> <!-- play services ads에 전달할 앱 ID -->
+        <activity android:name="com.example.cdsscheduleapp_legacy.RoutineActivity" />
+        <activity android:name="com.example.cdsscheduleapp_legacy.MemoActivity" />
+        <activity android:name="com.example.cdsscheduleapp_legacy.SettingsActivity" />
+        <activity android:name="com.example.cdsscheduleapp_legacy.CalendarActivity" /> <!-- play services ads에 전달할 앱 ID -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="@string/admob_app_id" />
 
-        <activity android:name=".ToDoActivity">
+        <activity android:name="com.example.cdsscheduleapp_legacy.ToDoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
